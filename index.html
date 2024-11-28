@@ -1,1 +1,27 @@
-TEST
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Directory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Company Directory</h1>
+    <input type="text" id="search" placeholder="Search companies..." oninput="filterCompanies()">
+    <select id="filter" onchange="filterCompanies()">
+      <option value="all">All Categories</option>
+      <option value="tech">Tech</option>
+      <option value="finance">Finance</option>
+      <option value="retail">Retail</option>
+    </select>
+  </header>
+  <main>
+    <div class="company-grid" id="companyGrid">
+      <!-- Dynamic content will be added here -->
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
