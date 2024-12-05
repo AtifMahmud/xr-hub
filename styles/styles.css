@@ -76,4 +76,35 @@
   border-radius: 15px;
   font-size: 0.8em;
   margin-top: 10px;
+  margin-right: 2px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  margin-top: 10px;
+  margin-right: 2px;
+}
+
+/* Specific styling for "tech" tags */
+.tag.tech {
+  background-color: #4CAF50; /* Green for tech */
+}
+
+/* Specific styling for "finance" tags */
+.tag.finance {
+  background-color: #f44336; /* Red for finance */
+}
+
+/* Specific styling for "retail" tags */
+.tag.retail {
+  background-color: #2196F3; /* Blue for retail */
+}
+
+.other {
+  background-color: #607D8B; /* Gray for others */
 }

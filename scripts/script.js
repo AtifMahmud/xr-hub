@@ -15,7 +15,13 @@ const companies = [
     name: "RetailWorld",
     logo: "https://via.placeholder.com/100",
     url: "https://retailworld.com",
-    tags: ["Retail", "E-commerce"],
+    tags: ["Retail", "Finance"],
+  },
+  {
+    name: "RetailWorld",
+    logo: "https://via.placeholder.com/100",
+    url: "https://retailworld.com",
+    tags: ["Retail", "Tech"],
   },
   {
     name: "RetailWorld",
@@ -51,13 +57,7 @@ const companies = [
     name: "RetailWorld",
     logo: "https://via.placeholder.com/100",
     url: "https://retailworld.com",
-    tags: ["Retail", "E-commerce"],
-  },
-  {
-    name: "RetailWorld",
-    logo: "https://via.placeholder.com/100",
-    url: "https://retailworld.com",
-    tags: ["Retail", "E-commerce"],
+    tags: ["Retail", "E-commerce", "Test", "Potato", "Tomate"],
   },
 ];
 
@@ -86,17 +86,18 @@ function createCompanyCards(companies) {
     card.appendChild(name);
 
     // Add link
+    const linkDiv = document.createElement("div");
     const link = document.createElement("a");
     link.href = company.url;
     link.target = "_blank";
     link.textContent = "Visit Website";
-    card.appendChild(link);
+    linkDiv.appendChild(link);
 
     // Add tags
     company.tags.forEach((tag) => {
       const tagBubble = document.createElement("span");
       tagBubble.textContent = tag;
-      tagBubble.className = "tag-bubble";
+      tagBubble.className = `tag ${tag.toLowerCase()}`; // Dynamic class based on tag
       card.appendChild(tagBubble);
     });
 
