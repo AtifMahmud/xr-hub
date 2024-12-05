@@ -1,48 +1,4 @@
-// Array of companies
-const companies = [
-  {
-    name: "TechCorp",
-    logo: "https://via.placeholder.com/100",
-    url: "https://techcorp.com",
-    tags: ["Tech", "Innovation"],
-  },
-  {
-    name: "FinanceHub",
-    logo: "https://via.placeholder.com/100",
-    url: "https://financehub.com",
-    tags: ["Finance", "Banking"],
-  },
-  {
-    name: "RetailWorld",
-    logo: "https://via.placeholder.com/100",
-    url: "https://retailworld.com",
-    tags: ["Retail", "E-commerce"],
-  },
-  {
-    name: "RetailWorld",
-    logo: "https://via.placeholder.com/100",
-    url: "https://retailworld.com",
-    tags: ["Retail", "E-commerce"],
-  },
-  {
-    name: "RetailWorld",
-    logo: "https://via.placeholder.com/100",
-    url: "https://retailworld.com",
-    tags: ["Retail", "E-commerce"],
-  },
-  {
-    name: "RetailWorld",
-    logo: "https://via.placeholder.com/100",
-    url: "https://retailworld.com",
-    tags: ["Retail", "E-commerce"],
-  },
-  {
-    name: "RetailWorld",
-    logo: "https://via.placeholder.com/100",
-    url: "https://retailworld.com",
-    tags: ["Retail", "E-commerce"],
-  },
-];
+import companies from "./data/companies";
 
 // Function to create cards
 function createCompanyCards(companies) {
@@ -51,7 +7,7 @@ function createCompanyCards(companies) {
   companies.forEach((company) => {
     // Create column wrapper
     const col = document.createElement("div");
-    col.className = "col-lg-4"; // Flex column for 3-per-row layout
+    col.className = "col-lg-3"; // Flex column for 3-per-row layout
 
     // Create card container
     const card = document.createElement("div");

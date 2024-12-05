@@ -14,9 +14,9 @@
 }
 
 /* Column behavior (e.g., col-lg-4) */
-.col-lg-4 {
-  flex: 0 0 33.333%; /* 3 columns per row */
-  max-width: 33.333%; /* Ensure max-width is the same */
+.col-lg-3 {
+  flex: 0 0 25%; /* 4 columns per row */
+  max-width: 25%; /* Ensure max-width is the same */
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box; /* Include padding in the box size */
@@ -33,6 +33,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
+  margin: 15px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
