@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Company Directory</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+
   <header>
     <h1>Company Directory</h1>
     <input type="text" id="search" placeholder="Search companies..." oninput="filterCompanies()">
@@ -17,11 +18,14 @@
       <option value="retail">Retail</option>
     </select>
   </header>
+
   <main>
-    <div class="company-grid" id="companyGrid">
-      <!-- Dynamic content will be added here -->
+    <div class="container">
+        <div class="row" id="companyGrid"></div>
+      </div>
     </div>
   </main>
-  <script src="script.js"></script>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>
