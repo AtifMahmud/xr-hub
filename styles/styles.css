@@ -5,6 +5,10 @@
   padding: 20px;
 }
 
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Row setup */
 .row {
   display: flex;
